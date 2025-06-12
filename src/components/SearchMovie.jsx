@@ -4,7 +4,6 @@ import Search from './search'
 import MovieCard from './MovieCard'
 import { useDebounce } from 'react-use'
 import { updateSearchCount } from '../appwrite'
-import MovieCardSkeleton from '../loading/MovieCardSkeleton';
 import SearchMovieSkeleton from '../loading/SearchMovieSkeleton';
 
 const API_KEY = '6aab4fe56b3de72b537cfab071de90be'
