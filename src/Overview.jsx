@@ -156,11 +156,11 @@ const Overview = () => {
                       <Button
                         color="light"
                         pill
-                        className="font-bold sm:text-base mr-5 cursor-pointer hover:scale-105 transition-transform hover:bg-white"
+                        className="font-bold sm:text-base bg-white mr-5 cursor-pointer hover:scale-105 transition-transform hover:bg-white"
                         onClick={() => setShowVideo(true)}
                       >
                         <FaPlay className="mr-2 h-4 w-4" />
-                        <span className="whitespace-nowrap sm:inline">PLAY NOW</span>
+                        <span className="whitespace-nowrap sm:inline text-[12px] sm:text-[16px]">PLAY NOW</span>
                       </Button>
 
                       <Button
@@ -216,7 +216,7 @@ const Overview = () => {
             </div>
           </div>
 
-          <div className="px-10 space-y-9 wrapper mb-24">
+          <div className="px-10 space-y-9 wrapper">
             <h2 className="text-2xl font-bold text-white sm:text-3xl">YOU MAY ALSO LIKE</h2>
 
             <div className="grid grid-cols-2 gap-5 xs:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">

@@ -73,7 +73,7 @@ const App = () => {
   }, [debouncedSearchTerm]);
 
   return (
-    <div className='overflow-hidden hide-scrollbar'>
+    <div className='overflow-hidden hide-scrollbar bg-primary'>
       <div className="sm:h-100 xl:h-150 2xl:h-screen relative">
 
         {isLoading ? (
@@ -114,7 +114,7 @@ const App = () => {
           ) : errorMessage ? (
             <p className='text-red-500'>{errorMessage}</p>
           ) : (
-            <section className='all-movies mb-24'>
+            <section className='all-movies'>
               <h2>All Movies</h2>
               <ul>
                 {movieList.map((movie) => (

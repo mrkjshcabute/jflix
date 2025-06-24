@@ -48,7 +48,7 @@ const ComingSoon = () => {
         <ComingSoonSkeleton count={5} />
       ) : (
         <div>
-          <h2 className='my-6'>Coming Soon</h2>
+          <h2 className='my-6 mt-0'>Coming Soon</h2>
           
           <div className="grid grid-cols-2 gap-5 xs:grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
             {movies.map((movie) => (
