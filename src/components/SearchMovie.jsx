@@ -6,6 +6,8 @@ import { useDebounce } from 'react-use'
 import { updateSearchCount } from '../appwrite'
 import SearchMovieSkeleton from '../loading/SearchMovieSkeleton';
 
+import logo from '../assets/jflix.png'
+
 const API_KEY = '6aab4fe56b3de72b537cfab071de90be'
 
 const SearchMovie = () => {
@@ -59,32 +61,37 @@ const SearchMovie = () => {
 
   return (
     <div>
-      {isLoading ? (
-        <div>
-          <SearchMovieSkeleton count={20} />
-        </div>
-      ) : errorMessage ? (
-        <p className='text-red-500'>{errorMessage}</p>
-      ) : (
+      
         <div className='overflow-hidden hide-scrollbar'>
           <main>
             <div className='wrapper'>
-              <h1 className='my-8 sm:my-20 cursor-pointer ' onClick={() => navigate(-1)}>Jflix</h1>
+              <div className='flex justify-center items-center'>
+                <img src={logo} className='h-60 md:h-80 w-60 md:w-80 my-8 cursor-pointer' onClick={() => navigate(-1)}/>
+              </div>
+    
               <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
-              <section className='all-movies mt-12 sm:mt-24 mb-24'>
-                <h2>All Movies</h2>
+              {isLoading ? (
+                <div>
+                  <SearchMovieSkeleton count={20} />
+                </div>
+              ) : errorMessage ? (
+                <p className='text-red-500'>{errorMessage}</p>
+              ) : (
+                <section className='all-movies mt-12 sm:mt-24 mb-24'>
+                  <h2>All Movies</h2>
 
-                <ul>
-                  {movieList.map((movie) => (
-                    <MovieCard key={movie.id} movie={movie} />
-                  ))}
-                </ul>
-              </section>
+                  <ul>
+                    {movieList.map((movie) => (
+                      <MovieCard key={movie.id} movie={movie} />
+                    ))}
+                  </ul>
+                </section>
+              )}
             </div>
           </main>
         </div>
-      )}
+      
     </div>
   )
 }

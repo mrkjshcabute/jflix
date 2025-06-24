@@ -27,8 +27,8 @@ const TrendingMovies = () => {
       {isLoading ? (
         <TrendingMoviesSkeleton count={10} />
       ) : (
-        <section className='trending mb-24'>
-          <h2 className='mb-20'>Trending Movies</h2>
+        <section className='trending mb-8 md:mb-20'>
+          <h2 className='my-8 md:my-16'>Trending Movies</h2>
         
           <ul>
             {trendingMovies.map((movie, index) => (

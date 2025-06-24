@@ -4,16 +4,7 @@ const SearchMovieSkeleton = ({ count }) => {
   return (
     <div className='overflow-hidden hide-scrollbar'>
       <main>
-            <div className='wrapper animate-pulse'>
-                <div className='flex flex-col justify-center items-center'>
-                    <div className='rounded w-28 h-12 bg-gray-200 my-8 sm:my-20 xs:h-12 md:h-16'></div>
-
-                    <div className='flex items-center justify-start rounded-xl max-w-3xl w-full h-16 bg-gray-200 mt-12 xs:h-12 md:h-16 lg:mt-12'>
-                        <div className='bg-gray-300 w-8 h-8 rounded-lg ml-7 mr-6'></div>
-                        <div className='bg-gray-300 w-28 h-5 rounded'></div>
-                    </div>
-                </div>
-                
+            <div className='animate-pulse'>
                 <section className='all-movies mt-12 sm:mt-24 mb-24'>
                     <div className='mb-10 bg-gray-300 w-36 h-9 rounded'></div>
                     
