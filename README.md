@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="src/assets/logo.png" alt="JFlix Logo" width="200"/>
+  <img src="src/assets/jflix.png" alt="JFlix Logo" width="200"/>
 </div>
 
 # 🎬 JFlix 
@@ -34,5 +34,5 @@
 ### Overview Page
 ![Overview](public/screenshots/overview.png)
 
-### Overview Page
+### Movie Search
 ![Search](public/screenshots/search.png)
